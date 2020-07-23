@@ -101,11 +101,13 @@ hr{
   margin: 0px 5px;
 }
 .nav-link {
-  color: white !important;
+  color: rgb(216, 215, 215) !important;
 }
-
+.active {
+  color:white !important;
+}
 .nav-link:hover {
-  color: blue !important;
+  color: white !important;
 }
 
 .bg-transparent {
