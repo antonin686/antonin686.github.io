@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="res/css/default.css">
-  <link id="theme-style" rel="stylesheet" href="res/css/green.css">
+  <link id="theme-style" rel="stylesheet" href="">
 
 </head>
 
@@ -35,10 +35,10 @@
           <img id="profile-pic" src="res/profile.png" alt="profile picture">
           <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
           <div id="theme-option-wrapper">
-            <div id="light-mode" class="theme-dot"></div>
-            <div id="blue-mode" class="theme-dot"></div>
-            <div id="green-mode" class="theme-dot"></div>
-            <div id="purple-mode" class="theme-dot"></div>
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
           </div>
 
           <p id="settings-note">*Themes settings will be saved for <br>your next visit</p>
@@ -71,9 +71,7 @@
           <h4>More about me</h4>
 
           <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
-          <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that
-            interest me.</p>
+          <p>I started programming in high school and looking forward to a career based around programming.</p>
 
           <hr>
 
@@ -197,6 +195,8 @@
 
     </div>
   </section>
+
+  <script src="res/js/script.js"></script>
 
 </body>
 
