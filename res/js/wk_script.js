@@ -921,7 +921,8 @@ function updateNames() {
   setTimeout(() => {
     element.classList.remove("btn-custom-success");
     element.classList.remove("btn-active");
-    document.getElementById("btn-getBoneList").innerHTML = "Get Bone List";
+    document.getElementById("btn-done").innerHTML = "Get Bone List";
+    displayHeroes()
   }, 3000);
 }
 
