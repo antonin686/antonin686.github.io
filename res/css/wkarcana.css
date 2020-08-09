@@ -118,4 +118,5 @@
   width: 300px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
+  margin-bottom: 30px;
 }

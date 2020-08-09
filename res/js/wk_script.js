@@ -936,7 +936,7 @@ function getBoneList() {
     var list = [];
     var index = 0;
 
-    while (index < storedHeroes.length && list.length < 7) {
+    while (index < storedHeroes.length && list.length < 9) {
       if (storedHeroes[index].status == 0) {
         list.push(storedHeroes[index].short)
       }
