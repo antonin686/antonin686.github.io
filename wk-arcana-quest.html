@@ -7,6 +7,7 @@
   <title>Antonin Islam</title>
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="res/css/default.css">
   <link rel="stylesheet" href="res/css/wkarcana.css">
@@ -42,7 +43,9 @@
               <div id="corner-tr" class="corner"></div>
               <h3>Quest</h3>
               <p>
+                <br>
                 Make those peasent know their place
+                <br><br>
               </p>
               <div id="corner-br" class="corner"></div>
               <div id="corner-bl" class="corner"></div>
@@ -54,20 +57,25 @@
   </section>
 
   <section class="s2">
-    <div class="main-container">
+    <div class="container">
 
-      <div class="heroes-wrapper">
-        <div id="select-heroes-str">
-            
-        </div>
+      <div class="row">
 
-        <div id="select-heroes-agi">
-          
+        <div class="col-md-12 mb-4 pb-4">
+          <h2 class="mt-4 text-center">Hero List <small id="completion"></small></h2>
+          <div class="text-center">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" onclick="heroDisplaySwitch()" class="custom-control-input" id="heroDisplaySwitch">
+              <label class="custom-control-label" for="heroDisplaySwitch">Show Uncollected Heroes Only</label>
+            </div>
+          </div>
         </div>
+        
+        <div id="select-heroes-str" class="col-md-4 mb-3"></div>
 
-        <div id="select-heroes-int">
-          
-        </div>
+        <div id="select-heroes-agi" class="col-md-4 mb-3"></div>
+
+        <div id="select-heroes-int" class="col-md-4 mb-3"></div>
 
         <div>
           <button id="btn-done" onclick="updateNames()" class="button">Save</button>
@@ -79,40 +87,30 @@
   </section>
 
   <section class="s1">
-    <div class="main-container">
-      <h3 style="text-align: center;">Some of my past projects</h3>
+    <div class="container">
 
-      <div class="post-wrapper">
-
+      <div class="row m-3 p-3">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center p-3">Next Bones to Collect</h2>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-md-12">
+              <input id="input-boneList" type="text" class="custom-input text-center">
+            </div>
+            <div class="col-md-4 mx-auto">
+              <button id="btn-getBoneList" onclick="getBoneList()" class="button">Get Bone List</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <section class="s2">
-    <div class="main-container">
-      <h3 style="text-align: center;">Get In Touch</h3>
-
-      <form id="contact-form">
-        <a name="contact"></a>
-
-        <label for="name">Name</label>
-        <input class="input-field" type="text" name="name">
-
-        <label for="subject">Subject</label>
-        <input class="input-field" type="text" name="subject">
-
-        <label for="email">Email</label>
-        <input class="input-field" type="text" name="email">
-
-        <label for="message">Message</label>
-        <textarea class="input-field" name="message"></textarea>
-
-        <input id="submit-btn" type="submit" value="Send">
-      </form>
-
-    </div>
-  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="res/js/wk_script.js"></script>
   <script src="res/js/script.js"></script>
@@ -120,4 +118,3 @@
 </body>
 
 </html>
-
