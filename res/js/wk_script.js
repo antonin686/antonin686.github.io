@@ -866,7 +866,7 @@ function displayHeroes() {
       return;
     }
 
-    checked = (e.status) ? "checked" : "";
+    checked = (e.status == "1") ? "checked" : "";
 
     var html = `
         <input class="hero-checkboxes" type="checkbox" name="checkbox[]" value="${e.name}" ${checked}>
