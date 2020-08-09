@@ -850,9 +850,9 @@ displayHeroes();
 
 function displayHeroes() {
 
-  var htmlStr = "<h4>Strength</h4>";
-  var htmlAgi = "<h4>Agility</h4>";
-  var htmlInt = "<h4>Inteligence</h4>";
+  var htmlStr = "<h3 class='mb-3'><u>Strength</u></h3>"; 
+  var htmlAgi = "<h3 class='mb-3'><u>Agility</u></h3>";
+  var htmlInt = "<h3 class='mb-3'><u>Inteligence</u></h3>";
   var heroCount = 0;
   var checked = "";
   
