@@ -846,7 +846,7 @@ if (updated == null) {
 
 var storedHeroes = JSON.parse(localStorage.getItem("heroes"));
 
-displayHeroes('all');
+displayHeroes();
 
 function displayHeroes() {
 
