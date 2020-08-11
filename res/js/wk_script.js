@@ -11,7 +11,7 @@ if (updated == null) {
     //Strength Heroes
     {
       attribute: "str",
-      name: "Abadon",
+      name: "Abaddon",
       short: "Aba",
       status: "0",
     },
@@ -771,7 +771,7 @@ if (updated == null) {
 
     {
       attribute: "int",
-      name: "Strom Spirit",
+      name: "Storm Spirit",
       short: "Strom",
       status: "0",
     },
