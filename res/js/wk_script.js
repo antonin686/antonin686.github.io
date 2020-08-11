@@ -88,8 +88,8 @@ if (updated == null) {
 
     {
       attribute: "str",
-      name: "Earth Sprite",
-      short: "Earth Sprite",
+      name: "Earth Spirit",
+      short: "Earth Spirit",
       status: "0",
     },
 
@@ -214,7 +214,7 @@ if (updated == null) {
 
     {
       attribute: "str",
-      name: "Sprite Breaker",
+      name: "Spirit Breaker",
       short: "Bara",
       status: "0",
     },
@@ -328,7 +328,7 @@ if (updated == null) {
 
     {
       attribute: "agi",
-      name: "Ember Sprit",
+      name: "Ember Spirit",
       short: "Ember",
       status: "0",
     },
@@ -510,7 +510,7 @@ if (updated == null) {
 
     {
       attribute: "agi",
-      name: "Vengeful Sprite",
+      name: "Vengeful Spirit",
       short: "VS",
       status: "0",
     },
@@ -771,7 +771,7 @@ if (updated == null) {
 
     {
       attribute: "int",
-      name: "Strom Sprite",
+      name: "Strom Spirit",
       short: "Strom",
       status: "0",
     },
@@ -979,4 +979,13 @@ function heroDisplaySwitch() {
     localStorage.setItem("heroDisplayMode", "all")
   }
   displayHeroes();
+}
+
+function exportJson(el) {
+
+  var obj = localStorage.getItem("heroes");
+  var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
+
+  el.setAttribute("href", "data:"+data);
+  el.setAttribute("download", "data.json");    
 }
