@@ -109,8 +109,8 @@ if (updated == null) {
 
     {
       attribute: "str",
-      name: "Husker",
-      short: "Husker",
+      name: "Huskar",
+      short: "Huskar",
       status: "0",
     },
 
@@ -123,8 +123,8 @@ if (updated == null) {
 
     {
       attribute: "str",
-      name: "Kunka",
-      short: "Kunka",
+      name: "Kunkka",
+      short: "Kunkka",
       status: "0",
     },
 
@@ -179,8 +179,8 @@ if (updated == null) {
 
     {
       attribute: "str",
-      name: "Pheonix",
-      short: "Pheonix",
+      name: "Phoenix",
+      short: "Phoenix",
       status: "0",
     },
 
@@ -314,8 +314,8 @@ if (updated == null) {
 
     {
       attribute: "agi",
-      name: "Clinks",
-      short: "Clinks",
+      name: "Clinkz",
+      short: "Clinkz",
       status: "0",
     },
 
@@ -489,7 +489,7 @@ if (updated == null) {
 
     {
       attribute: "agi",
-      name: "Terroblade",
+      name: "Terrorblade",
       short: "TB",
       status: "0",
     },
@@ -540,7 +540,7 @@ if (updated == null) {
 
     {
       attribute: "int",
-      name: "Antient Apparition",
+      name: "Ancient Apparition",
       short: "AA",
       status: "0",
     },
