@@ -200,6 +200,16 @@ h6 {
   border: 2px solid var(--borderColor);
 }
 
+#project-pic {
+  display: block;
+  margin: 0 auto;
+
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+}
+
 
 #theme-option-wrapper {
   display: flex;
@@ -316,6 +326,12 @@ h6 {
   background-color: var(--previewShadow);
 }
 
+#technologies {
+  display: flex;
+  background-color: var(--previewShadow);
+  justify-items: left;
+}
+
 .social-links {
   display: grid;
   align-content: center;
@@ -337,6 +353,14 @@ h6 {
   padding-bottom: 50px;
 }
 
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 640px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .post {
   border: 1px solid var(--borderColor);
 
@@ -349,6 +373,13 @@ h6 {
   display: block;
   width: 100%;
   height: 180px;
+  object-fit: cover;
+}
+
+.project-thumbnail {
+  display: block;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 
