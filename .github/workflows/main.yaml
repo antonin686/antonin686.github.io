@@ -1,0 +1,30 @@
+name: Angular Build and Deploy
+
+on:
+  push:
+    branches:
+      - cactus-themed
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Build Angular app to prod
+        working-directory: antonin686.github.io
+        run: npm install && npm run build:prod
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: antonin686.github.io/dist/browser
+          branch: prod
+          token: ${{ secrets.GH_TOKEN }}
