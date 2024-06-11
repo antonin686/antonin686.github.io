@@ -15,7 +15,7 @@ export default function FindMeOn() {
             <a href="mailto:antonin.islam@gmail.com">
                 <MdEmail />
             </a>
-            <div>..</div>
+            <div>.</div>
         </div>
     );
 }
