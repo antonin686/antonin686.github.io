@@ -1,5 +1,5 @@
-import { FaGithub, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function FindMeOn() {
     return (

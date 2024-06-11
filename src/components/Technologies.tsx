@@ -17,7 +17,7 @@ const techs = [
     },
     {
         category: "Others",
-        options: "Git,Bash",
+        options: "Git, Bash",
     },
 ];
 
