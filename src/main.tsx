@@ -5,18 +5,23 @@ import "./index.css";
 import RootLayout from "./layouts/root";
 import Welcome from "./pages/welcome";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <RootLayout />,
+            children: [
+                {
+                    path: "/",
+                    element: <Welcome />,
+                },
+            ],
+        },
+    ],
     {
-        path: "/",
-        element: <RootLayout />,
-        children: [
-            {
-                path: "/",
-                element: <Welcome />,
-            },
-        ],
-    },
-]);
+        basename: import.meta.env.BASE_URL,
+    }
+);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
