@@ -16,7 +16,7 @@ export default function Welcome() {
             <KnowMore />
 
             <hr className="border-gray-400" />
-            <div className="flex justify-center text-muted-foreground">Last Updated - May 2024</div>
+            <div className="flex justify-center text-muted-foreground">Last Updated - July 2024</div>
         </div>
     );
 }
