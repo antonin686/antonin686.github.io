@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,15 +7,15 @@
 
 @layer base {
     :root {
-        --background: 216 3.17% 12.16%;
-        --foreground: 210 2% 79%;
+        --background: 210 35% 13%;
+        --foreground: 0 0% 100%;
         --card: 210 10% 22%;
         --card-foreground: 60 9.1% 97.8%;
         --popover: 20 14.3% 4.1%;
         --popover-foreground: 60 9.1% 97.8%;
         --primary: 47.9 95.8% 53.1%;
         --primary-foreground: 26 83.3% 14.1%;
-        --secondary: 12 6.5% 15.1%;
+        --secondary: 209 35% 15%;
         --secondary-foreground: 60 9.1% 97.8%;
         --muted: 12 6.5% 15.1%;
         --muted-foreground: 24 5.4% 63.9%;
@@ -22,9 +23,12 @@
         --accent-foreground: 60 9.1% 97.8%;
         --destructive: 0 62.8% 30.6%;
         --destructive-foreground: 60 9.1% 97.8%;
-        --border: 12 6.5% 15.1%;
+        --border: 188 59% 21%;
         --input: 12 6.5% 15.1%;
         --ring: 35.5 91.7% 32.9%;
+
+        --previewBg: rgb(25, 39, 52, 0.8);
+        --previewShadow: #111921;
     }
 }
 
@@ -33,10 +37,82 @@
         @apply border-border;
     }
 
-    html {
-        font-family: "VT323", monospace;
-    }
     body {
         @apply bg-background text-foreground;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong {
+        font-family: "Russo One", sans-serif;
+        font-weight: 500;
+    }
+
+    p,
+    li,
+    span,
+    label,
+    input,
+    textarea {
+        color: var(--secondaryText);
+        font-family: "Roboto Mono", monospace;
+    }
+}
+
+#preview-shadow {
+    background-color: var(--previewShadow);
+    max-width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#preview {
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+    position: relative;
+}
+
+.corner {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+    position: absolute;
+}
+
+#corner-tl {
+    top: -5px;
+    left: -5px;
+}
+
+#corner-tr {
+    top: -5px;
+    right: -5px;
+}
+
+#corner-br {
+    bottom: -5px;
+    right: -5px;
+}
+
+#corner-bl {
+    bottom: -5px;
+    left: -5px;
+}
+
+.img-frame {
+    --s: 10px; /* control the size */
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 2px solid hsl(var(--border));
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 1px 2px, #0000 25%, hsl(var(--border)) 0);
 }
