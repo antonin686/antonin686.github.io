@@ -14,14 +14,14 @@ export default function Projects() {
         <div className="flex flex-col gap-5 items-center">
             <h1 className="text-2xl">Some of my projects</h1>
             <Carousel
-                className="w-full max-w-2xl"
+                className="w-full max-w-4xl"
                 opts={{
                     align: "start",
                 }}
             >
                 <CarouselContent>
                     {PROJECTS.map((project, idx) => (
-                        <CarouselItem className="lg:basis-1/2" key={idx}>
+                        <CarouselItem className="lg:basis-1/3 md:basis-1/2" key={idx}>
                             <Card className="bg-background rounded-xl">
                                 <img
                                     className="w-full h-44 rounded-t-xl"
@@ -35,7 +35,7 @@ export default function Projects() {
                                 </CardContent>
                                 <CardFooter>
                                     <Link
-                                        to="#"
+                                        to={`/projects/${project.slug}`}
                                         className="text-sm text-cyan-500 font-bold hover:underline"
                                     >
                                         Read more

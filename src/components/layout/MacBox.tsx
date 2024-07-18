@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ContactButton from "./ContactButton";
 
 interface Props {
     title: string;
@@ -15,9 +16,9 @@ export default function MacBox({ title, desc }: Props) {
                     <div className="size-4 rounded-full bg-green-500"></div>
                 </div>
                 <div className="flex gap-2 font-bold text-base">
-                    <Link to="/contact">Home</Link>
+                    <Link to="/">Home</Link>
                     <div>|</div>
-                    <Link to="/contact">Contact</Link>
+                    <ContactButton />
                 </div>
             </div>
             <div className="bg-secondary py-3 px-5 rounded-xl h-96">

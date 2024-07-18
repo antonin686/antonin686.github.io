@@ -1,5 +1,7 @@
-import { SKILLS } from "@/constants/skills";
 import { SOCIAL_LINKS } from "@/constants/social-links";
+
+import Skillset from "./Skillset";
+import { KEYWORDS } from "@/constants/keywords";
 
 
 export default function MoreAboutMe() {
@@ -21,15 +23,18 @@ export default function MoreAboutMe() {
                     </a>.
                 </p>
                 <div className="flex flex-wrap gap-2 text-sm font-bold">
-                    {SKILLS.map((skill, index) => (
+                    {KEYWORDS.map((keyword, index) => (
                         <div
-                            className="bg-black px-3 py-1 rounded-full border"
+                            className="bg-background px-3 py-1 rounded-full border"
                             key={index}
                         >
                             {" "}
-                            {skill}{" "}
+                            {keyword}{" "}
                         </div>
                     ))}
+                </div>
+                <div className="my-7">
+                    <Skillset />
                 </div>
             </div>
             <div className="flex flex-col gap-5 justify-center items-center">

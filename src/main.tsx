@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import RootLayout from "./layouts/root";
 import Home from "./pages/home";
+import ProjectView from "./pages/project-view";
 
 const router = createBrowserRouter(
     [
@@ -14,6 +15,10 @@ const router = createBrowserRouter(
                 {
                     path: "/",
                     element: <Home />,
+                },
+                {
+                    path: "/projects/:slug",
+                    element: <ProjectView />,
                 },
             ],
         },

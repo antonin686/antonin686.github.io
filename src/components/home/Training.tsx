@@ -31,15 +31,7 @@ export default function Training() {
                                 {training.points.map((point, idx) => (
                                     <li className="text-sm" key={idx}>
                                         <div className="flex items-center gap-5">
-                                            {point.title}
-                                            {point.link && (
-                                                <a
-                                                    href={point.link}
-                                                    className="border-2 p-2 rounded-xl animate-pulse hover:scale-110 hover:animate-none"
-                                                >
-                                                    <PiCertificateFill />
-                                                </a>
-                                            )}
+                                            <a href={point.link} className="hover:underline">{point.title}</a>
                                         </div>
                                     </li>
                                 ))}
